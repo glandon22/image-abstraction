@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Image Data Helper</title>
+</head>
+<body>
+	<h1>Search Results</h1>
+	<ul>
+		<% for(var i=0; i<results.length; i++) {%>
+		<li><b>Thumbnail:</b> <a href='<%= results[i].thumbnail %>'><%= results[i].thumbnail %></a>, <b>Snippet:</b> <%= results[i].snippet %>, <b>Site Context:</b><a href='<%= results[i].context %>'> <%= results[i].context %></a></li>
+		<% } %>
+	</ul>
+</body>
+</html>

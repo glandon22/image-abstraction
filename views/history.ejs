@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Image Data Helper</title>
+</head>
+<body>
+	<h1>Search History</h1>
+	<ul class="history">
+		<% for(var i=0; i<data.length; i++) {%>
+		<li><%= data[i].term %>, <%= data[i].date %></li>
+		<% } %>
+	</ul>
+</body>
+</html>
